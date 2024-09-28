@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-color: rgba(31, 31, 31, 1);
+  --text-color: #fff;
+  --card-border-color: rgba(31, 31, 31, 1);
+  --card-body: #1B1817;
+  --active-color: #F07B02;
+}
+
+body {
+  background-color: var(--body-color) !important;
+}
+
+/* ----navbar---- */
+.navbar {
+  background-color: var(--body-color) !important;
+}
+
+.navbar .active {
+  color: var(--active-color) !important;
+}
+
+.contactButton {
+  background-color: var(--active-color) !important;
+}
+
+/* ----banner---- */
+.mainBanner .bannerImage {
+  background-image: url('/public/assets/images/blog.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 250px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.mainBanner .bannerContent {
+  color: var(--text-color) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-size: 60px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+/* ----block page---- */
+.blockContainer .active {
+  background-color: var(--active-color) !important;
+  color: var(--text-color);
+  border-radius: 8px;
+  border: none !important;
+
+  &:hover {
+    color: var(--text-color);
+  }
+}
+
+.blockTitle {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+/* ----main card---- */
+.card {
+  border-color: var(--card-border-color) !important;
+}
+
+.card-body {
+  background-color: var(--card-body);
+}
+
+@media screen and (max-width:700px) {
+  .blockTitle {
+    font-size: 15px;
+  }
+
+  .card-title {
+    font-size: 15px;
+  }
+}
